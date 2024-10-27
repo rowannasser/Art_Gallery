@@ -1,0 +1,95 @@
+body {
+  background-color: var(--bage);
+}
+
+.add-product .form-container {
+  transform: translateY(50px);
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+.add-product .form-container {
+  margin-left: 25%;
+  margin-top: 70px;
+}
+
+.add-product h2 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.add-product .form-info {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.add-product .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.add-product .form-group {
+  flex: 1;
+  min-width: 250px; /* Ensures form groups stay legible on smaller screens */
+}
+.add-product .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.add-product .form-group input,
+.add-product .form-group textarea,
+.add-product .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.add-product .form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+.add-product .color-options {
+  display: flex;
+  gap: 10px;
+}
+.add-product .color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: inline-block;
+}
+.add-product .submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.add-product .submit-btn:hover {
+  background-color: var(--bage);
+  color: var(--green);
+}
+
+#color {
+  margin-bottom: 20px;
+}
+#colors {
+  margin-bottom: 17px;
+}
+@media (max-width: 768px) {
+  .add-product .form-row {
+    flex-direction: column;
+  }
+}

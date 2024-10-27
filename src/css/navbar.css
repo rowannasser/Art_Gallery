@@ -1,0 +1,30 @@
+:root {
+  --bage: #f2efe4;
+  --red: #e0484a;
+  --green: #2f6675;
+}
+body {
+  background-color: var(--bage);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+.bg-body-tertiary {
+  background-color: transparent !important;
+  width: 100%;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 100 !important;
+}
+.logo {
+  width: 50px;
+}
+.logo-name {
+  color: var(--red);
+  font-weight: 600;
+  margin-left: 15px;
+}
+.navbar-nav a:hover {
+  color: var(--red);
+  text-decoration: none;
+}

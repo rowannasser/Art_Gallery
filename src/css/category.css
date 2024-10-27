@@ -1,0 +1,10 @@
+.category .table {
+  transform: translateY(72px);
+  margin-top: 71px;
+  width: 70%;
+  margin-left: 25%;
+}
+.category .table th,
+.category .table td {
+  padding: 10px;
+}

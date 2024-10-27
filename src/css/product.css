@@ -1,0 +1,104 @@
+body {
+  overflow-x: hidden;
+}
+
+.product-container {
+  background-color: var(--bage);
+  cursor: pointer;
+}
+.product-container .btns-filter {
+  width: fit-content;
+  margin-inline: auto;
+  padding-top: 60px !important;
+}
+.product-container .btns-filter .btn {
+  background-color: var(--red);
+  color: var(--bage);
+  margin: 2px;
+}
+.product-container .container {
+  margin-top: 30px;
+  margin-inline: auto;
+}
+.product-container .product-content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.product-container .product-content .product {
+  transition: 0.3s;
+}
+.product-container .product-content:hover .image .icons {
+  left: 30px;
+}
+.product-container .product-content .image {
+  width: 95%;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.product-container .product-content .icons {
+  transition: 0.3s;
+  color: var(--red);
+  position: absolute;
+  left: -100px;
+  top: 30px;
+  text-align: center;
+}
+.product-container .product-content .icons i {
+  background-color: var(--bage);
+  box-shadow: -4px -4px 0 black;
+  border: 1px solid black;
+  padding: 10px;
+  display: block;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.product-container .product-content .icons i:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0;
+  background-color: black;
+  color: var(--bage);
+}
+.product-container .product-content .image img {
+  width: 100%;
+  margin-inline: auto;
+  transition: 0.3s;
+  border: 10px solid var(--bage);
+}
+/* .product-container .btn {
+  background-image: linear-gradient(to right, var(--bage), var(--red));
+  color: var(--bage);
+  font-weight: bold;
+  transition: 0.3s;
+  position: absolute;
+  right:15px;
+}
+.product-container .btn:hover {
+  background-image: linear-gradient(to left, var(--bage), var(--red));
+  color: var(--red);
+} */
+.product-container .product-content .info {
+  text-align: center;
+}
+.product-container .product-content .info p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.product-container .product-content .info .category {
+  font-size: 16px;
+  padding-top: 15px;
+}
+.product-container .product-content .info .title {
+  color: var(--red);
+  font-size: 18px;
+  padding-top: 5px;
+  font-weight: 300;
+}
+.product-container .product-content .info .price {
+  padding-top: 5px;
+}

@@ -1,0 +1,388 @@
+.file-manager {
+  margin-top: 70px;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bage);
+}
+.file-manager .main-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.file-manager .side {
+  flex: 0.2;
+  padding: 10px;
+}
+
+.file-manager #menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-manager #menu li {
+  margin-bottom: 10px;
+}
+
+.file-manager #menu li a {
+  text-decoration: none;
+  color: #333;
+}
+.file-manager .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-manager .filters input {
+  margin-left: 10px;
+}
+
+.file-manager .stats-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.file-manager .card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  width: calc(100% / 4.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.file-manager .main-content h2 {
+  width: auto !important;
+  font-size: 18px;
+  color: var(--green);
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.file-manager .traffic h2,
+.file-manager .overview h2 {
+  margin: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.file-manager .traffic .chart-placeholder img {
+  height: 300px;
+}
+.file-manager .card-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.file-manager .value {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.file-manager .change {
+  color: #999;
+}
+.file-manager .overview-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+.file-manager .revenue {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.file-manager .revenue,
+.file-manager .traffic-details {
+  margin-top: 20px;
+}
+.file-manager .traffic-details {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  background-color: #fff;
+}
+.file-manager .traffic-details .traffic-item {
+  width: fit-content;
+}
+.file-manager .traffic-details .traffic-item img {
+  width: 30px;
+}
+.file-manager .revenue p,
+.file-manager .traffic-item {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.file-manager .chart-placeholder {
+  background-color: #f3f3f3;
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+}
+.file-manager .traffic .chart-placeholder {
+  width: 100%;
+  min-height: 300px;
+  background-color: #fff;
+}
+
+.file-manager .order-img,
+.file-manager .product-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.file-manager .sold {
+  color: green;
+}
+
+.file-manager .return {
+  color: red;
+}
+
+.file-manager .top-selling-products {
+  margin-top: 20px;
+}
+
+.file-manager .product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.file-manager .product-table th,
+.file-manager .product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.file-manager .pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.file-manager .page-buttons {
+  display: flex;
+}
+
+.file-manager .page-buttons button {
+  margin-left: 5px;
+  padding: 5px 10px;
+}
+
+.overview,
+.traffic,
+.recent-orders {
+  background: #fff;
+  border-radius: 8px;
+  padding: 50px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overview h2,
+.traffic h2,
+.recent-orders h2 {
+  margin-top: 0;
+  color: #2f6776;
+  font-family: cursive;
+}
+
+.overview-content,
+.chart-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 290px;
+  background: #f4f7fa;
+  border-radius: 8px;
+  color: #000;
+  margin-left: 30px;
+}
+
+.traffic-chart {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+}
+
+.traffic-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.traffic-item {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.traffic-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.value {
+  margin-left: 10px;
+  color: #777;
+}
+
+.recent-orders ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-orders li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.sold {
+  color: green;
+}
+
+.return {
+  color: red;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.chart-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.order-img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.top-selling-products {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.sales-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sales-header h2 {
+  font-family: cursive;
+  color: #2f6776;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.import-btn,
+.export-btn {
+  background: #4c95a9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.export-btn:hover,
+.import-btn:hover {
+  background: #000;
+  color: #ffffff;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.product-table thead {
+  background: #f3f4f6;
+}
+
+.product-table th,
+.product-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.product-table th {
+  font-weight: 600;
+}
+
+.product-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.product-details {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.product-date {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.page-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.page-btn {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
